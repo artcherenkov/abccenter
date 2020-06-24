@@ -1,7 +1,6 @@
 {
   "name": "abccenter",
   "version": "17.0.0",
-  "private": true,
   "description": "Сайт ООО НПП АВС-Н",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
