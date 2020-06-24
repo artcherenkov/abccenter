@@ -1,0 +1,13 @@
+@mixin resetList() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin setFont($size, $color, $line-height, $weight, $text-align) {
+  font-size: $size;
+  color: $color;
+  line-height: $line-height;
+  font-weight: $weight;
+  text-align: $text-align;
+}

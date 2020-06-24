@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>BitStorm</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link as="font" crossorigin="anonymous" href="fonts/PTSansRegular.woff2" rel="preload">
+  <link as="font" crossorigin="anonymous" href="fonts/PTSansBold.woff2" rel="preload">
+</head>
+
+<body>
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="page-header__logo-wrapper">
+      <img alt="" class="page-header__logo" height="60" src="img/logo-bs.jpg" width="87">
+    </div>
+    <button class="page-header__toggle" type="button">
+      <svg class="page-header__toggle-image page-header__toggle-image--open" width="50" height="28"
+        aria-label="Открыть меню">
+        <use xlink:href="#icon-burger"></use>
+      </svg>
+    </button>
+    <nav class="page-header__nav">
+      <ul class="page-header__nav-list">
+        <li class="page-header__nav-item">
+          <a class="page-header__nav-link" href="#">Главная</a>
+        </li>
+        <li class="page-header__nav-item">
+          <a class="page-header__nav-link" href="#">Подробнее</a>
+        </li>
+        <li class="page-header__nav-item">
+          <a class="page-header__nav-link" href="#">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="page-header__profile-link" href="#"></a>
+  </div>
+</header>
+
+<main class="page-main">
+  <section class="promo">
+    <div class="promo__wrapper">
+      <h1 class="promo__header">
+        <span class="promo__header--orange">B</span>it<br><span class="promo__header--orange">S</span>torm
+      </h1>
+      <div class="promo__about">
+        <h2 class="promo__title">Бит на ваш вкус</h2>
+        <p class="promo__slogan">Создаём биты, а не торгуем правами и форматами.</p>
+        <a class="promo__link button button--black" href="#">click</a>
+      </div>
+    </div>
+  </section>
+  <section class="offer">
+    <h1 class="visually-hidden">О нас</h1>
+    <div class="offer__wrapper">
+      <h2 class="offer__title">Что мы предлагаем</h2>
+      <ul class="offer__list">
+        <li class="offer__item">Биты только на заказ.</li>
+        <li class="offer__item">Сделаем так, как вы хотите, без&nbsp;компромиссов</li>
+        <li class="offer__item">Звук в любом формате, по&nbsp;стандарту&nbsp;wav.</li>
+        <li class="offer__item">Про права говорили? Ах&nbsp;да, используйте&nbsp;в любых целях.</li>
+      </ul>
+      <a class="offer__link button button--white" href="#">click</a>
+    </div>
+  </section>
+  <section class="price-list">
+    <div class="price-list__wrapper">
+      <div class="price-list__title-wrapper">
+        <h1 class="price-list__title">
+          <span>P</span>rices
+        </h1>
+        <span class="price-list__title price-list__title--reflection"><span>P</span>rices</span>
+      </div>
+      <ul class="price-list__list">
+        <li class="price-list__item">
+          <p class="price-list__cost">3000</p>
+          <h4 class="price-list__item-title">Express</h4>
+          <p class="price-list__item-description">За день битмейкер создаст бит по вашим предпочтениям. Две версии звука вы получите по завершению.</p>
+          <a class="price-list__item-link button button--orange" href="#">click</a>
+        </li>
+        <li class="price-list__item">
+          <p class="price-list__cost">6000</p>
+          <h4 class="price-list__item-title">Basic</h4>
+          <p class="price-list__item-description">При покупке данной услуги, за два дня битмейкер соберёт бит по вашим предпочтениям </p>
+          <a class="price-list__item-link button button--orange" href="#">click</a>
+        </li>
+      </ul>
+      <p class="price-list__money-back">В течение двух часов после покупки вы можете<br>полностью вернуть свои средства, а после - 50% от суммы покупки в течении 36 часов.
+      </p>
+    </div>
+  </section>
+  <section class="time-to-begin">
+    <div class="time-to-begin__wrapper">
+      <h1 class="time-to-begin__title">Самое время начать, создавайте стиль.</h1>
+      <a class="time-to-begin__link button button--white" href="#">click</a>
+    </div>
+  </section>
+  <section class="join-us">
+
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <h1 class="visually-hidden">Наши контакты</h1>
+    <ul class="page-footer__contact-list">
+      <li class="page-footer__contact-item">
+        <p class="page-footer__contact">Почта:
+          <a class="page-footer__contact-link page-footer__contact-link--mail" href="mailto:neibips@gmail.com">neibips@gmail.com</a>
+        </p>
+      </li>
+      <li class="page-footer__contact-item">
+        <p class="page-footer__contact">Телефон:
+          <a class="page-footer__contact-link page-footer__contact-link--tel" href="tel:89177815130">+7 917 781 51-30</a>
+        </p>
+      </li>
+    </ul>
+    <a class="page-footer__logo-text" href="#"><span>B</span>it
+      <span>S</span>torm</a>
+    <ul class="page-footer__social-list">
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link" href="">
+          <svg class="page-footer__social-image" height="40" width="40">
+            <use xlink:href="#icon-vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link" href="">
+          <svg class="page-footer__social-image" height="40" width="40">
+            <use xlink:href="#icon-telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="page-footer__social-item">
+        <a class="page-footer__social-link" href="">
+          <svg class="page-footer__social-image" height="40" width="40">
+            <use xlink:href="#icon-soundcloud"></use>
+          </svg>
+        </a>
+        <span class="visually-hidden">Icons made by Freepic</span>
+      </li>
+    </ul>
+  </div>
+</footer>
+</body>
+
+</html>
