@@ -1,0 +1,22 @@
+.promo {
+  display: flex;
+  justify-content: center;
+
+  background:url("../img/bg-calc.jpg");
+}
+
+.promo__wrapper {
+  padding: 50px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.promo__slider {
+  width: 100%;
+  height: 472px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.7);
+  border: 0.5px solid #000000;
+  border-radius: 30px;
+}
+

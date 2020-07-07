@@ -1,0 +1,85 @@
+.page-header__title-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 50px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.page-header__title {
+  margin: 0;
+  padding-top: 25px;
+  padding-left: 73px;
+  font-weight: normal;
+  color: #2196F3;
+  font-size: 24px;
+  line-height: 28px;
+  position: relative;
+
+  & span {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 67px;
+    height: 67px;
+    background: url("../img/logo-ABC.svg");
+  }
+}
+
+.page-header__languages-list {
+  @include resetList();
+  margin-top: 25px;
+  display: flex;
+  height: 20px;
+  margin-left: auto;
+}
+
+.page-header__languages-item {
+  padding: 0;
+  margin: 0 15px 0 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:first-child {
+    border: 1px solid #DADADA;
+  }
+
+  &--current {
+    margin-right: 20px;
+    transform: scale(1.4);
+  }
+}
+
+.page-header__nav {
+  background-color: #2196F3;
+  padding: 0 50px;
+  border-radius: 30px 30px 0 0;
+}
+
+.page-header__nav-list {
+  @include resetList();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-header__nav-item {
+  &:not(:last-of-type) {
+    padding-right: 25px;
+  }
+}
+
+.page-header__nav-link {
+  display: block;
+  padding: 31px 0;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: white;
+}

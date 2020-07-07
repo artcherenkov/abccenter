@@ -1,0 +1,42 @@
+.page-footer__wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #014c7d;
+  border-radius: 30px 30px 0 0;
+  padding: 50px 50px 78px;
+}
+
+.page-footer__contacts {
+  @include resetList();
+  display: flex;
+}
+
+.page-footer__contacts-item {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+
+  &:first-of-type {
+    text-align: left;
+  }
+
+  &:last-of-type {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+.page-footer__organization-name {
+  font-style: normal;
+}
+
+.page-footer__organization-address {
+  font-style: normal;
+}
+
+.page-footer__organization-link {
+  text-decoration: none;
+  color: white;
+}
