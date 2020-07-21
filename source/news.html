@@ -17,7 +17,13 @@
 <header class="page-header">
   <div class="page-header__wrapper">
     <div class="page-header__title-wrapper">
-      <h1 class="page-header__title"><span>АВС</span><br>Сметные решения</h1>
+      <h1 class="page-header__title">
+        <svg class="page-header__logo" width="67" height="67"
+          aria-label="Логотип АВС">
+          <use xlink:href="#logo-abc-Ai"></use>
+        </svg>
+        <span>АВС</span><br>Сметные решения
+      </h1>
       <ul class="page-header__languages-list">
         <li class="page-header__languages-item page-header__languages-item--current">
           <svg class="page-header__languages-icon" width="40" height="21"
@@ -48,34 +54,34 @@
     <nav class="page-header__nav">
       <ul class="page-header__nav-list">
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">Главная</a>
+          <a class="page-header__nav-link" href="index.html">Главная</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">Новости</a>
+          <a class="page-header__nav-link page-header__nav-link--current" href="news.html">Новости</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">Наши программные решения</a>
+          <a class="page-header__nav-link" href="solutions.html">Наши программные решения</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">СНБ</a>
+          <a class="page-header__nav-link page-header__nav-link--unable" href="#">СНБ</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">Цены</a>
+          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Цены</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">Скачать</a>
+          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Скачать</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">Обучение</a>
+          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Обучение</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">Публикации</a>
+          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Публикации</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">Техподдержка</a>
+          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Техподдержка</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link" href="#">Контакты</a>
+          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -87,7 +93,74 @@
     <div class="all-news__wrapper">
       <h1 class="all-news__title">Новости</h1>
       <div class="all-news__filter">
-
+        <h2 class="all-news__sort-by">Сортировка:</h2>
+        <ul class="all-news__sort-by-list">
+          <li class="all-news__sort-by-item">Дата</li>
+          <li class="all-news__sort-by-item">Важность</li>
+        </ul>
+        <h2 class="all-news__choose-topic">Выбрать тему новости:</h2>
+        <ul class="all-news__choose-topic-list">
+          <li class="all-news__choose-topic-item">
+            <svg class="all-news__choose-topic-icon all-news__choose-topic-icon--abc" width="40" height="40"
+              aria-label="АВС">
+              <use xlink:href="#logo-abc-Ai"></use>
+            </svg>
+          </li>
+          <li class="all-news__choose-topic-item">
+            <svg class="all-news__choose-topic-icon all-news__choose-topic-icon--accord" width="40" height="40"
+              aria-label="Аккорд">
+              <use xlink:href="#logo-abc-Ai"></use>
+            </svg>
+          </li>
+          <li class="all-news__choose-topic-item">
+            <svg class="all-news__choose-topic-icon all-news__choose-topic-icon--pir" width="40" height="40"
+              aria-label="ПИР">
+              <use xlink:href="#logo-abc-Ai"></use>
+            </svg>
+          </li>
+          <li class="all-news__choose-topic-item">
+            <svg class="all-news__choose-topic-icon all-news__choose-topic-icon--bim" width="40" height="40"
+              aria-label="BIM-смета">
+              <use xlink:href="#logo-abc-Ai"></use>
+            </svg>
+          </li>
+          <li class="all-news__choose-topic-item">
+            <svg class="all-news__choose-topic-icon all-news__choose-topic-icon--database" width="40" height="40" aria-label="Базы данных">
+              <use xlink:href="#icon-db"></use>
+            </svg>
+          </li>
+          <li class="all-news__choose-topic-item">
+            <svg class="all-news__choose-topic-icon all-news__choose-topic-icon--notice" width="40" height="40" aria-label="Объявления">
+              <use xlink:href="#icon-notice"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div class="all-news__news-list-wrapper">
+        <ul class="all-news__news-list">
+          <li class="all-news__news-item">
+            <img class="all-news__news-item-icon" src="img/gerb-moscow.svg" width="100" height="100" alt="">
+            <p>24.04.2020</p>
+            <h2>Индексы и текущие цены по Московской области за март 2020 г.</h2>
+            <a href="#">Перейти к новости</a>
+          </li>
+          <li class="all-news__news-item">
+            <svg class="all-news__news-item-icon" width="100" height="100" fill="#368a3f" aria-label="Новость об АВС">
+              <use xlink:href="#logo-abc-Ai"></use>
+            </svg>
+            <p>29.04.2020</p>
+            <h2>Выпущены редакции АККОРД 2020.1</h2>
+            <a href="#">Перейти к новости</a>
+          </li>
+          <li class="all-news__news-item">
+            <svg class="all-news__news-item-icon" width="100" height="100" fill="#414142" aria-label="Новость об АВС">
+              <use xlink:href="#logo-abc-Ai"></use>
+            </svg>
+            <p>29.04.2020</p>
+            <h2>Выпущена редакция АВС-рекомпозитор</h2>
+            <a href="#">Перейти к новости</a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>

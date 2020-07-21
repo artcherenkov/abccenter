@@ -15,6 +15,7 @@
   font-size: 24px;
   line-height: 28px;
   position: relative;
+  text-decoration: none;
 
   & span {
     font-weight: bold;
@@ -22,15 +23,21 @@
     line-height: 33px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 67px;
-    height: 67px;
-    background: url("../img/logo-ABC.svg");
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo {
+  fill: #2196f3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .page-header__languages-list {
@@ -82,4 +89,31 @@
   line-height: 19px;
   text-decoration: none;
   color: white;
+  transition-duration: 0.1s;
+
+  &:hover {
+    opacity: 0.6;
+    transition-duration: 0.1s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--current {
+    padding-bottom: 7px;
+    border-bottom: 2px solid white;
+  }
+
+  &--current:hover {
+    opacity: 1;
+    cursor: default;
+  }
+
+  &--unable,
+  &--unable:hover,
+  &--unable:active {
+    opacity: 0.3;
+    cursor: default;
+  }
 }

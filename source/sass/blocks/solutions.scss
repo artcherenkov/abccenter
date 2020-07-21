@@ -1,0 +1,134 @@
+.solutions {
+  background-color: rgba(33, 150, 243, 0.05);
+}
+
+.solutions__wrapper {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.solutions__title {
+  margin: 0 0 50px;
+  padding: 21px 0 0 130px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  color: #2196F3;
+}
+
+.solutions__list {
+  @include resetList();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.solutions__item {
+  background: white;
+  width: 800px;
+  height: 345px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  box-sizing: border-box;
+  border-radius: 30px;
+  position: relative;
+  padding-left: 280px;
+  padding-bottom: 57px;
+  margin-bottom: 50px;
+
+  &--blue {
+    background-color: #dff0fd;
+    border-color: #2196f3;
+    position: relative;
+  }
+
+  &--green {
+    background-color: #e1efeb;
+    border-color: #368a3f;
+    position: relative;
+  }
+
+  &--pink {
+    background-color: #f2e6ef;
+    border-color: #e02e66;
+    position: relative;
+  }
+
+  &--grey {
+    background-color: #e2e8eb;
+    border-color: #414142;
+    position: relative;
+  }
+}
+
+.solutions__item-icon {
+  position: absolute;
+  left: 22px;
+  top: calc(50% - 115px);
+
+  &--abc {
+    fill: #2196f3;
+  }
+
+  &--accord {
+    fill: #368a3f;
+  }
+
+  &--pir {
+    fill: #e02e66;
+  }
+
+  &--bim {
+    fill: #414142;
+  }
+}
+
+.solutions__item-name {
+  margin: 57px 0 0;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 63px;
+}
+
+.solutions__item-description {
+  margin: 12px 0 0;
+  font-size: 24px;
+  line-height: 33px;
+  padding-right: 10px;
+}
+
+.solutions__item-buttons {
+  margin: auto 0 0;
+  display: flex;
+}
+
+.solutions__item-button {
+  display: block;
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 33px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 0 15px 0 15px;
+
+  &--blue {
+    background: rgba(33, 150, 243, 0.5);
+  }
+
+  &--green {
+    background: rgba(54, 138, 63, 0.5);
+  }
+
+  &--pink {
+    background: rgba(224, 46, 102, 0.5);
+  }
+
+  &--grey {
+    background: rgba(65, 65, 66, 0.5);
+  }
+
+}
