@@ -110,9 +110,9 @@
     cursor: default;
   }
 
-  &--unable,
-  &--unable:hover,
-  &--unable:active {
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:active {
     opacity: 0.3;
     cursor: default;
   }

@@ -22,7 +22,8 @@
   color: #2196f3;
 }
 
-.all-news__sort-by, .all-news__choose-topic  {
+.all-news__sort-by,
+.all-news__choose-topic {
   margin: 0 20px 0 0;
   font-weight: bold;
   font-size: 18px;
@@ -63,12 +64,15 @@
   &--abc {
     fill: #2196f3;
   }
+
   &--accord {
     fill: #368a3f;
   }
+
   &--pir {
     fill: #e02e66;
   }
+
   &--bim {
     fill: #414142;
   }
@@ -82,17 +86,19 @@
   flex-direction: column;
 }
 
-.all-news__news-item {
+.all-news__news-link {
   display: flex;
   margin-bottom: 21px;
+  min-height: 157px;
   padding-right: 20px;
   position: relative;
   flex-direction: column;
   background: #fbfbfb;
   border: 1px solid rgba(33, 150, 243, 0.5);
   box-sizing: border-box;
-  box-shadow: 0 15px 40px rgba(33, 150, 243, 0.15);
+  box-shadow: 0 4px 4px rgba(33, 150, 243, 0.15);
   border-radius: 30px;
+  text-decoration: none;
 
   & img {
     position: absolute;
@@ -103,7 +109,7 @@
 
   & p {
     margin-top: 20px;
-    margin-bottom: 11px;
+    margin-bottom: 16px;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -112,21 +118,15 @@
 
   & h2 {
     padding-left: 160px;
-    margin: 0 0 10px;
+    margin: 0 0 42px;
     font-weight: bold;
     font-size: 26px;
     line-height: 30px;
+    color: black;
   }
 
-  & a {
-    display: block;
-    margin-bottom: 17px;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    text-decoration-line: underline;
-
-    color: #2196F3;
+  &:hover {
+    box-shadow: 0 15px 40px rgba(33, 150, 243, 0.25);
   }
 }
 

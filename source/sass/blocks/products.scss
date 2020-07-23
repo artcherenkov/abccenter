@@ -10,7 +10,7 @@
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .products__list {
@@ -54,6 +54,22 @@
 
 .products__item-image {
   text-align: center;
+
+  &--abc {
+    fill: #2196f3;
+  }
+
+  &--accord {
+    fill: #368a3f;
+  }
+
+  &--pir {
+    fill: #e02e66;
+  }
+
+  &--bim {
+    fill: #414142;
+  }
 }
 
 .products__item-name {
@@ -63,7 +79,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  color: #2196F3;
+  color: #2196f3;
   text-decoration: none;
   transition-duration: 0.1s;
 }

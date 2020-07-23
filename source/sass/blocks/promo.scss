@@ -1,22 +1,44 @@
 .promo {
-  display: flex;
   justify-content: center;
-  background:url("../img/bg-calc.jpg");
-}
-
-.promo__wrapper {
-  padding: 50px;
   width: 100%;
-  background-color: rgba(255,255,255,0.8);
-}
-
-.promo__slider {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  height: 472px;
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.7);
-  border: 0.5px solid #000000;
-  border-radius: 30px;
-}
+  height: 520px;
+  position: relative;
+  overflow: scroll;
+  transition: background 0.1s linear;
 
+
+  & .btn-1 {
+    left: 100px;
+  }
+
+  & .btn-2 {
+    left: 200px;
+  }
+
+  & ul {
+    overflow: scroll;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 520px;
+    width: 200%;
+    transition: transform 0.8s ease;
+    //transform: translate(100px);
+  }
+
+  & ul li {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: auto;
+    height: 100%;
+    background: #cccccc;
+    text-align: center;
+    //background-size: cover;
+  }
+}

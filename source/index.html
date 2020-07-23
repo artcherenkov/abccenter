@@ -20,7 +20,7 @@
       <a href="index.html" class="page-header__title">
         <svg class="page-header__logo" width="67" height="67"
           aria-label="Логотип АВС">
-          <use xlink:href="#logo-abc-Ai"></use>
+          <use xlink:href="#logo-abc"></use>
         </svg>
         <span>АВС</span><br>Сметные решения
       </a>
@@ -63,25 +63,25 @@
           <a class="page-header__nav-link" href="solutions.html">Наши программные решения</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link page-header__nav-link--unable" href="#">СНБ</a>
+          <a class="page-header__nav-link page-header__nav-link--disabled" href="#">СНБ</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Цены</a>
+          <a class="page-header__nav-link page-header__nav-link--disabled" href="#">Цены</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Скачать</a>
+          <a class="page-header__nav-link page-header__nav-link--disabled" href="#">Скачать</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Обучение</a>
+          <a class="page-header__nav-link page-header__nav-link--disabled" href="#">Обучение</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Публикации</a>
+          <a class="page-header__nav-link page-header__nav-link--disabled" href="#">Публикации</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Техподдержка</a>
+          <a class="page-header__nav-link page-header__nav-link--disabled" href="#">Техподдержка</a>
         </li>
         <li class="page-header__nav-item">
-          <a class="page-header__nav-link page-header__nav-link--unable" href="#">Контакты</a>
+          <a class="page-header__nav-link page-header__nav-link--disabled" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -90,8 +90,21 @@
 
 <main class="page-main">
   <section class="promo">
-    <div class="promo__wrapper">
-      <div class="promo__slider"></div>
+    <div class="promo__slider slider">
+      <div class="slider__item">
+        <img src="img/slider-bg1.webp" alt="" class="slider__item-image">
+      </div>
+      <div class="slider__item">
+        <img src="img/slider-bg2.webp" alt="" class="slider__item-image">
+      </div>
+      <div class="slider__number-list">
+        <button class="slider__number">
+          <span></span>
+        </button>
+        <button class="slider__number">
+          <span></span>
+        </button>
+      </div>
     </div>
   </section>
   <section class="products">
@@ -100,28 +113,36 @@
       <ul class="products__list">
         <li class="products__item">
           <a class="products__item-link" href="#">
-            <img src="img/prod-abc-blue.png" class="products__item-image" alt="АВС" width="150" height="150">
+            <svg class="products__item-image products__item-image--abc" width="150" height="150" aria-label="АВС">
+              <use xlink:href="#logo-abc"></use>
+            </svg>
             <p class="products__item-name">АВС</p>
             <p class="products__item-description">Сметная система</p>
           </a>
         </li>
         <li class="products__item">
           <a class="products__item-link" href="#">
-            <img src="img/prod-abc-green.png" class="products__item-image" alt="АККОРД" width="150" height="150">
+            <svg class="products__item-image products__item-image--accord" width="150" height="150" aria-label="АВС">
+              <use xlink:href="#logo-abc"></use>
+            </svg>
             <p class="products__item-name">АККОРД</p>
             <p class="products__item-description">Календарно-сетевое планирование</p>
           </a>
         </li>
         <li class="products__item">
           <a class="products__item-link" href="#">
-            <img src="img/prod-abc-pink.png" class="products__item-image" alt="ПИР" width="150" height="150">
+            <svg class="products__item-image products__item-image--pir" width="150" height="150" aria-label="АВС">
+              <use xlink:href="#logo-abc"></use>
+            </svg>
             <p class="products__item-name">ПИР</p>
             <p class="products__item-description">Сметы на проектно-изыскательские работы</p>
           </a>
         </li>
         <li class="products__item">
           <a class="products__item-link" href="#">
-            <img src="img/prod-abc-grey.png" class="products__item-image" alt="BIM-смета" width="150" height="150">
+            <svg class="products__item-image products__item-image--bim" width="150" height="150" aria-label="АВС">
+              <use xlink:href="#logo-abc"></use>
+            </svg>
             <p class="products__item-name">BIM-смета</p>
             <p class="products__item-description">Интеграция сметной системы с BIM-платформами</p>
           </a>
@@ -142,21 +163,18 @@
           <a href="#" class="news__item-link">
             <span class="news__item-date">30.04.2020</span>
             <p class="news__item-body">Выпущена редакция АВС-рекомпозитор</p>
-            <p class="news__item-goto">Перейти к новости</p>
           </a>
         </li>
         <li class="news__item">
           <a href="#" class="news__item-link">
             <span class="news__item-date">29.04.2020</span>
             <p class="news__item-body">Выпущены редакции АККОРД 2020.1</p>
-            <p class="news__item-goto">Перейти к новости</p>
           </a>
         </li>
         <li class="news__item">
           <a href="#" class="news__item-link">
             <span class="news__item-date">24.04.2020</span>
             <p class="news__item-body">Индексы и текущие цены по Московской области за март 2020 г.</p>
-            <p class="news__item-goto">Перейти к новости</p>
           </a>
 
         </li>
@@ -198,6 +216,7 @@
     </ul>
   </div>
 </footer>
+<script src="js/slider.js"></script>
 </body>
 
 </html>
